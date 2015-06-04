@@ -6,3 +6,4 @@ RUN apt-get update \
     && export DEBIAN_FRONTEND=noninteractive \
     && apt-get install -q -y mysql-server \
     && chmod 777 /init.sh
+ADD my.cnf /etc/mysql/my.cnf
